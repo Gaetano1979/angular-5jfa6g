@@ -1,0 +1,14 @@
+<app-table [colums]="colums" [items]="items">
+</app-table>
+
+<ng-template tableCell let-cell let-i="index">
+	{{i}}{{cell}}
+
+</ng-template>
+
+<div *tableCell='let cell;let i = index'>
+	{{i}}{{cell}}
+</div>
+<div *appHead='let col;let i = index'>
+  {{i}}{{col}}
+</div>
